@@ -1,0 +1,17 @@
+# Module inventorymanagement
+# RPC service class, partial path of RPC policy file
+com.krsw.InventoryManagement.client.HRD.Logging.AddHRDLoggingUserInfoEntityService, 7DBBF5D85D57F87A978358BC20C5B81F.gwt.rpc
+com.krsw.InventoryManagement.client.HRD.ViewMode.FetchHRDGeneralUserModeEntityService, 310366749588893694773F341FE40177.gwt.rpc
+com.krsw.InventoryManagement.client.HRD.Stock.Fabric.AddHRDFabricInfoEntityService, C071DF366958A83A5450418E4C1E0E07.gwt.rpc
+com.krsw.InventoryManagement.client.HRD.Location.AddHRDLocationInfoEntityService, DD7AF3C26F2D633E5CB6211AD1228131.gwt.rpc
+com.krsw.InventoryManagement.client.HRD.Vote.Fabric.VotingResults.FetchHRDFabricCountingResultService, A8863C0AA29FDA6F520CDA0163742F88.gwt.rpc
+com.krsw.InventoryManagement.client.HRD.Location.FetchHRDLocationInfoEntityService, DA654D23E56B5A1E8C4733AAB6FD4F33.gwt.rpc
+com.krsw.InventoryManagement.client.HRD.Stock.Fabric.FetchHRDFabricInfoEntityService, 6D2061623816CCF573791B953268F01B.gwt.rpc
+com.krsw.InventoryManagement.client.HRD.Accounts.AddHRDBasicUserInfoEntityService, ABEA6EEBBF5F7F80568A5E2874ABBCEA.gwt.rpc
+com.krsw.InventoryManagement.client.HRD.Vote.Fabric.Totalization.AddHRDFabricTotalizationService, E9EE7D7E274A184B0A63FB64D289072E.gwt.rpc
+com.krsw.InventoryManagement.client.HRD.Vote.Fabric.Totalization.FetchHRDFabricTotalizationService, FEEB00E7C11404710BE9516F52477B5A.gwt.rpc
+com.krsw.InventoryManagement.client.HRD.Vote.Fabric.VotingResults.AddHRDFabricCountingResultService, F1B2DD46254FC1153833835341D3C199.gwt.rpc
+com.krsw.InventoryManagement.client.Mail.EmailService, F8179A6844119B54B820FD5CA452A9B5.gwt.rpc
+com.krsw.InventoryManagement.client.HRD.ViewMode.AddHRDGeneralUserModeEntityService, 71262FDB20F1610CC0114FA59310D819.gwt.rpc
+com.krsw.InventoryManagement.client.HRD.Accounts.FetchHRDBasicUserInfoEntityService, CBF2D41DB8F2B4B1918C261AB2DACB88.gwt.rpc
+com.krsw.InventoryManagement.client.BLOB.Stock.Fabric.FabricImageService, D4A46AD1ABBEFBE67D307F704171C6C0.gwt.rpc

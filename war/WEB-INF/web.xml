@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+  <!-- Servlets -->
+
+
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>InventoryManagement.html</welcome-file>
+  </welcome-file-list>
+  <!-- ユーザーアカウント登録 -->
+  <servlet>
+  	<servlet-name>AddHRDBasicUserInfoEntityService</servlet-name>
+  	<servlet-class>com.krsw.InventoryManagement.server.HRD.Accounts.AddHRDBasicUserInfoEntityServiceImpl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AddHRDBasicUserInfoEntityService</servlet-name>
+  	<url-pattern>/inventorymanagement/AddHRDBasicUserInfoEntityService</url-pattern>
+  </servlet-mapping>
+  <!-- ユーザーアカウント取得 -->
+  <servlet>
+  	<servlet-name>FetchHRDBasicUserInfoEntityServiceAsync</servlet-name>
+  	<servlet-class>com.krsw.InventoryManagement.server.HRD.Accounts.FetchHRDBasicUserInfoEntityServiceImpl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>FetchHRDBasicUserInfoEntityServiceAsync</servlet-name>
+  	<url-pattern>/inventorymanagement/FetchHRDBasicUserInfoEntityServiceAsync</url-pattern>
+  </servlet-mapping>
+  <!-- ユーザーアカウント削除 -->
+  <servlet>
+  	<servlet-name>DeleteHRDBasicUserInfoEntityServiceAsync</servlet-name>
+  	<servlet-class>com.krsw.InventoryManagement.server.HRD.Accounts.DeleteHRDBasicUserInfoEntityServiceImpl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>DeleteHRDBasicUserInfoEntityServiceAsync</servlet-name>
+  	<url-pattern>/inventorymanagement/DeleteHRDBasicUserInfoEntityServiceAsync</url-pattern>
+  </servlet-mapping>
+   <!-- 在庫データ(幕)登録 -->
+  <servlet>
+  	<servlet-name>AddHRDFabricInfoEntityService</servlet-name>
+  	<servlet-class>com.krsw.InventoryManagement.server.HRD.Stock.Fabric.AddHRDFabricInfoEntityServiceImpl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AddHRDFabricInfoEntityService</servlet-name>
+  	<url-pattern>/inventorymanagement/AddHRDFabricInfoEntityService</url-pattern>
+  </servlet-mapping>
+	<!-- 在庫データ(幕)取得 -->
+	 <servlet>
+  	<servlet-name>FetchHRDFabricInfoEntityServiceAsync</servlet-name>
+  	<servlet-class>com.krsw.InventoryManagement.server.HRD.Stock.Fabric.FetchHRDFabricInfoEntityServiceImpl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>FetchHRDFabricInfoEntityServiceAsync</servlet-name>
+  	<url-pattern>/inventorymanagement/FetchHRDFabricInfoEntityServiceAsync</url-pattern>
+  </servlet-mapping>
+  <!-- 拠点データ登録 -->
+ <servlet>
+  	<servlet-name>AddHRDLocationInfoEntityService</servlet-name>
+  	<servlet-class>com.krsw.InventoryManagement.server.HRD.Location.AddHRDLocationInfoEntityServiceImpl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AddHRDLocationInfoEntityService</servlet-name>
+  	<url-pattern>/inventorymanagement/AddHRDLocationInfoEntityService</url-pattern>
+  </servlet-mapping>
+	<!-- 拠点データ取得 -->
+	<servlet>
+  	<servlet-name>FetchHRDLocationInfoEntityServiceAsync</servlet-name>
+  	<servlet-class>com.krsw.InventoryManagement.server.HRD.Location.FetchHRDLocationInfoEntityServiceImpl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>FetchHRDLocationInfoEntityServiceAsync</servlet-name>
+  	<url-pattern>/inventorymanagement/FetchHRDLocationInfoEntityServiceAsync</url-pattern>
+  </servlet-mapping>
+   <!-- クライアントビューモード設定 登録 -->
+  <servlet>
+  	<servlet-name>AddHRDGeneralUserModeEntityService</servlet-name>
+  	<servlet-class>com.krsw.InventoryManagement.server.HRD.ViewMode.AddHRDGeneralUserModeEntityServiceImpl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AddHRDGeneralUserModeEntityService</servlet-name>
+  	<url-pattern>/inventorymanagement/AddHRDGeneralUserModeEntityService</url-pattern>
+  </servlet-mapping>
+	<!-- クライアントビューモード設定 取得 -->
+	 <servlet>
+  	<servlet-name>FetchHRDGeneralUserModeEntityServiceAsync</servlet-name>
+  	<servlet-class>com.krsw.InventoryManagement.server.HRD.ViewMode.FetchHRDGeneralUserModeEntityServiceImpl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>FetchHRDGeneralUserModeEntityServiceAsync</servlet-name>
+  	<url-pattern>/inventorymanagement/FetchHRDGeneralUserModeEntityServiceAsync</url-pattern>
+  </servlet-mapping>
+<!-- FabricTotalization 登録 -->
+    <servlet>
+  	<servlet-name>AddHRDFabricTotalizationService</servlet-name>
+  	<servlet-class>com.krsw.InventoryManagement.server.HRD.Vote.Fabric.Totalization.AddHRDFabricTotalizationEntityServiceImpl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AddHRDFabricTotalizationService</servlet-name>
+  	<url-pattern>/inventorymanagement/AddHRDFabricTotalizationService</url-pattern>
+  	</servlet-mapping>
+  	<!-- FabricTotalization 取得 -->
+  	<servlet>
+  	<servlet-name>FetchHRDFabricTotalizationServiceAsync</servlet-name>
+  	<servlet-class>com.krsw.InventoryManagement.server.HRD.Vote.Fabric.Totalization.FetchHRDFabricTotalizationEntityServiceImpl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>FetchHRDFabricTotalizationServiceAsync</servlet-name>
+  	<url-pattern>/inventorymanagement/FetchHRDFabricTotalizationServiceAsync</url-pattern>
+  </servlet-mapping>
+  <!-- 幕の投票した人データ 登録 -->
+    <servlet>
+  	<servlet-name>AddHRDFabricCountingResultService</servlet-name>
+  	<servlet-class>com.krsw.InventoryManagement.server.HRD.Vote.Fabric.VotingResults.AddHRDFabricCountingResultEntityServiceImpl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AddHRDFabricCountingResultService</servlet-name>
+  	<url-pattern>/inventorymanagement/AddHRDFabricCountingResultService</url-pattern>
+  	</servlet-mapping>
+  	<!-- 幕の投票した人データ 取得 -->
+  	<servlet>
+  	<servlet-name>FetchHRDFabricCountingResultServiceAsync</servlet-name>
+  	<servlet-class>com.krsw.InventoryManagement.server.HRD.Vote.Fabric.VotingResults.FetchHRDFabricCountingResultEntityServiceImple</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>FetchHRDFabricCountingResultServiceAsync</servlet-name>
+  	<url-pattern>/inventorymanagement/FetchHRDFabricCountingResultServiceAsync</url-pattern>
+  </servlet-mapping>
+ <!-- ログデータ 登録 -->
+    <servlet>
+  	<servlet-name>AddHRDLoggingUserInfoEntityService</servlet-name>
+  	<servlet-class>com.krsw.InventoryManagement.server.HRD.Logging.AddHRDLoggingUserInfoEntityServiceImpl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AddHRDLoggingUserInfoEntityService</servlet-name>
+  	<url-pattern>/inventorymanagement/AddHRDLoggingUserInfoEntityService</url-pattern>
+  	</servlet-mapping>
+  	<!-- ログデータ 取得 -->
+  	<servlet>
+  	<servlet-name>FetchHRDLoggingUserInfoEntityServiceAsync</servlet-name>
+  	<servlet-class>com.krsw.InventoryManagement.server.HRD.Logging.FetchHRDLoggingUserInfoEntityServiceImpl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>FetchHRDLoggingUserInfoEntityServiceAsync</servlet-name>
+  	<url-pattern>/inventorymanagement/FetchHRDLoggingUserInfoEntityServiceAsync</url-pattern>
+  </servlet-mapping>
+<!-- Fabric blobstore用 -->
+  <servlet>
+		<servlet-name>FabricImageServlet</servlet-name>
+		<servlet-class>com.krsw.InventoryManagement.server.BLOB.Stock.Fabric.FabricImageServiceImpl</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>FabricBlobUploadServlet</servlet-name>
+		<servlet-class>com.krsw.InventoryManagement.server.BLOB.Stock.Fabric.FabricBlobUploadServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FabricImageServlet</servlet-name>
+		<url-pattern>/inventorymanagement/FabricImages</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	   <servlet-name>FabricBlobUploadServlet</servlet-name>
+	   <url-pattern>/FabricUpload</url-pattern>
+	</servlet-mapping>
+<!-- Mail Java API 用 -->
+  <servlet>
+  <servlet-name>EmailService</servlet-name>
+  <servlet-class>com.krsw.InventoryManagement.server.Mail.EmailServiceImple</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>EmailService</servlet-name>
+  <url-pattern>/inventorymanagement/EmailService</url-pattern>
+  </servlet-mapping>
+
+<!-- デフォルト初期設定 -->
+  <servlet>
+    <servlet-name>SystemServiceServlet</servlet-name>
+    <servlet-class>com.google.api.server.spi.SystemServiceServlet</servlet-class>
+    <init-param>
+      <param-name>services</param-name>
+      <param-value/>
+    </init-param>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>SystemServiceServlet</servlet-name>
+    <url-pattern>/_ah/spi/*</url-pattern>
+  </servlet-mapping>
+
+</web-app>

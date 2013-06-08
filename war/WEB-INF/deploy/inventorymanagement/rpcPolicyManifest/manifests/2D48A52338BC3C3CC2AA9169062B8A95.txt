@@ -1,0 +1,2 @@
+serviceClass: com.krsw.InventoryManagement.client.HRD.Location.FetchHRDLocationInfoEntityService
+path: DA654D23E56B5A1E8C4733AAB6FD4F33.gwt.rpc

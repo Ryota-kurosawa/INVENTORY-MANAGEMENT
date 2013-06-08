@@ -1,0 +1,54 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:b="urn:import:com.github.gwtbootstrap.client.ui"
+	xmlns:p1="urn:import:com.google.gwt.user.cellview.client">
+	<ui:style>
+		.important {
+			font-weight: bold;
+		}
+	</ui:style>
+	<g:HTMLPanel>
+		<g:LayoutPanel width="100%" height="100%" ui:field="layoutpanel" styleName="krswNMA-Label">
+			<g:layer left="12px" width="67px" top="12px" height="20px">
+				<b:Label text="実施概要" styleName="krswNMB-Label"/>
+			</g:layer>
+			<g:layer left="0px" width="595px" top="32px" height="1px">
+				<b:Image url="img/line_1260.png" height="1px" width="100%"/>
+			</g:layer>
+			<g:layer left="12px" width="501px" top="50px" height="20px">
+				<b:Label text="千葉スタジオの幕倉庫には各現場で作った物で再利用できそうな物があります。" styleName="krswSB-Label"/>
+			</g:layer>
+			<g:layer left="0px" width="449px" top="318px" height="25px">
+				<b:Image url="img/line_1260.png" height="1px" width="100%"/>
+			</g:layer>
+			<g:layer left="12px" width="282px" top="253px" height="20px">
+				<b:Label text="画面の黒い部分をクリックしてスタートです。" styleName="krswSB-Label"/>
+			</g:layer>
+			<g:layer left="12px" width="566px" top="76px" height="20px">
+				<b:Label text="スペースを有効利用するためにも処分する物と在庫として管理する物に分けたいと思います。" styleName="krswSB-Label"/>
+			</g:layer>
+			<g:layer left="12px" width="583px" top="102px" height="20px">
+				<b:Label text="在庫になった物に関しては千葉スタジオの有り物幕として他の幕と同様に管理していきます。" styleName="krswSB-Label"/>
+			</g:layer>
+			<g:layer left="12px" width="583px" top="128px" height="20px">
+				<b:Label text="今後使う可能性があると思った幕には、画面の左端のボックスにチェックを入れて下さい。" styleName="krswSB-Label"/>
+			</g:layer>
+			<g:layer left="12px" width="250px" top="168px" height="20px">
+				<b:Label text="幕の写真はクリックで拡大します。" styleName="krswSB-Label"/>
+			</g:layer>
+			<g:layer left="12px" width="430px" top="188px" height="20px">
+				<b:Label text="すべて確認したら左上の「アンケート終了」ボタンを押して下さい。" styleName="krswSB-Label"/>
+			</g:layer>
+			<g:layer left="430px" width="166px" top="324px" height="20px">
+				<b:Label text="生産管理部 佐々木・黒澤　" horizontalAlignment="ALIGN_RIGHT" styleName="krswNME-Label"/>
+			</g:layer>
+			<g:layer left="458px" width="120px" top="210px" height="120px">
+				<b:Image url="img/shimizulogo.gif" width="120px" height="120px"/>
+			</g:layer>
+			<g:layer left="287px" width="264px" top="142px" height="20px">
+				<b:Label styleName="krswSB-Label" text="(チェックを入れた行が青色になります。)"/>
+			</g:layer>
+		</g:LayoutPanel>
+	</g:HTMLPanel>
+</ui:UiBinder>

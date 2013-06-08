@@ -1,0 +1,112 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:b="urn:import:com.github.gwtbootstrap.client.ui"
+	xmlns:p1="urn:import:com.google.gwt.user.cellview.client">
+	<ui:style>
+		.important {
+			font-weight: bold;
+		}
+	</ui:style>
+	<g:HTMLPanel ui:field="htmlpanel" width="100%" height="100%">
+	<b:ResponsiveNavbar ui:field="responsiveNavBar" width="100%" height="3.3%" position="DEFAULT" inverse="true">
+		<b:Nav ui:field="Nav">
+		<b:NavLink text="在庫" ui:field="navLink_Stockfabric"></b:NavLink>
+        <b:NavLink href="" text="拠点" ui:field="navlink_dept">Another Test</b:NavLink>
+        <b:NavLink href="" text="アンケート" ui:field="navlink_Surveyresult"></b:NavLink>
+        <b:NavLink text="ユーザー" ui:field="navLink_Usersetting"></b:NavLink>
+    		</b:Nav>
+    			<b:Nav alignment="RIGHT" ui:field="navRight">
+        		<b:NavLink text="ユーザー" ui:field="navLink_Username">Test</b:NavLink>
+    		</b:Nav>
+	</b:ResponsiveNavbar>
+	<g:LayoutPanel width="100%" height="50%" ui:field="layoutPanel">
+			<g:layer top="0px" height="100.0pct">
+				<b:DataGrid ui:field="datagrid" striped="true" width="100%" height="100%" bordered="true" focus="true" condensed="true" autoHeaderRefreshDisabled="true" autoFooterRefreshDisabled="true" keyboardSelectionPolicy="BOUND_TO_SELECTION" pageSize="100"></b:DataGrid>
+			</g:layer>
+		</g:LayoutPanel>
+	<b:WellForm width="100%" height="38%" ui:field="wellform">
+			<b:Well width="1273px" height="213px" ui:field="well">
+			<!--  <b:FormLabel ui:field="formLabel">　　ユーザー登録・編集・削除</b:FormLabel> -->
+				<b:ButtonGroup toggle="radio">
+    					<b:Button active="true" icon="PLUS_SIGN" type="PRIMARY" ui:field="btn_radio_regist" text=" 登録モード ">登録</b:Button>
+    					<!-- <b:Button icon="PENCIL" type="WARNING" ui:field="btn_radio_update" text="更新">編集</b:Button> -->
+    					<b:Button icon="REMOVE_SIGN" type="DANGER" text="削除モード" ui:field="btn_radio_delete" >削除</b:Button>
+				</b:ButtonGroup>
+				<!--  <b:Well ui:field="well" width="560px" height="5%"> -->
+					<g:LayoutPanel width="100%" height="200px" ui:field="layoutpanel">
+	<g:layer left="0px" width="303px" top="44px" height="40px">
+		<b:InputAddOn prependIcon="LEAF" width="303">
+		<b:TextBox placeholder="材質..." ui:field="txtbox_material" width="260px"/>
+		</b:InputAddOn>
+	</g:layer>
+	<g:layer left="0px" width="303px" top="78px" height="40px">
+		<b:InputAddOn prependIcon="FULLSCREEN">
+		<b:TextBox placeholder="サイズ…" ui:field="txtbox_size" width="260px"/>
+		</b:InputAddOn>
+	</g:layer>
+	<g:layer top="112px" height="36px" left="0px" width="303px">
+		<b:ListBox height="35px" ui:field="cmbbox_storagelocation" width="301px"/>
+	</g:layer>
+	<g:layer left="611px" width="324px" top="10px" height="30px">
+		<b:ButtonGroup toggle="radio" width="324px" height="30px" ui:field="btnroup_uploadimage">
+    	<b:Button active="true" icon="CAMERA_RETRO" ui:field="btn_uploadimage1">画像1</b:Button>
+    	<b:Button icon="CAMERA_RETRO" ui:field="btn_uploadimage2">画像2</b:Button>
+    	<b:Button icon="CAMERA_RETRO" ui:field="btn_uploadimage3">画像3</b:Button>
+    	<b:Button icon="CAMERA_RETRO" ui:field="btn_uploadimage4">画像4</b:Button>
+</b:ButtonGroup>
+	</g:layer>
+
+	<g:layer left="303px" width="305px" top="10px" height="70px">
+		<b:TextArea height="40" placeholder="備考" ui:field="txtAria_remarks" width="295px" visibleLines="4"/>
+	</g:layer>
+	<g:layer left="10px" width="122px" top="154px" height="32px">
+		<b:CheckBox width="110px" height="20px" ui:field="checkbox_enabled">データ有効</b:CheckBox>
+		<!--  <b:Button toggle="true" block="false" icon="CHECK" type="INFO" ui:field="buttontoggle_enabled" iconSize="SMALL" text="データ有効">有効</b:Button> -->
+	</g:layer>
+	<g:layer left="611px" width="122px" top="118px" height="30px">
+		<b:Button addStyleNames="btn" text="データ登録" type="PRIMARY" ui:field="btn_Register" icon="OK_SIGN" width="96px" height="20px"></b:Button>
+	</g:layer>
+	<g:layer left="735px" width="16px" top="124px" height="16px">
+		<g:Image url="img/loadingSpinMINI.gif" ui:field="image_Minispin"/>
+	</g:layer>
+	<g:layer left="0px" width="305px" top="10px" height="40px">
+		<b:InputAddOn prependIcon="BOOKMARK_EMPTY" width="303">
+			<b:IntegerBox placeholder="幕管理番号(半角数字)" width="260px" ui:field="intbox_storagenumber"/>
+		</b:InputAddOn>
+	</g:layer>
+	<g:layer left="611px" width="250px" top="40px" height="40px">
+		<g:VerticalPanel borderWidth="0" height="20px" horizontalAlignment="ALIGN_LEFT" width="230px" ui:field="verticalPanel">
+			<g:FormPanel height="20px" styleName="h1" width="251px" ui:field="uploadformPanel">
+				<b:FileUpload ui:field="uploadField" alternateSize="MINI" width="250px" height="38px"/>
+			</g:FormPanel>
+		</g:VerticalPanel>
+	</g:layer>
+	<g:layer left="611px" width="146px" top="80px" height="50px">
+		<b:Button height="21px" icon="CLOUD_UPLOAD" text="アップロード" type="DEFAULT" width="120px" ui:field="uploadFileButton"/>
+	</g:layer>
+	<g:layer left="760px" width="16px" top="86px" height="16px">
+		<g:Image url="img/loadingSpinMINI.gif" ui:field="image_uploadminispin"/>
+	</g:layer>
+	<g:layer left="958px" width="270px" top="7px" height="190px">
+		<b:Well width="230px" height="130px">
+			<g:LayoutPanel width="100%" height="100%">
+				<g:layer>
+					<g:HorizontalPanel spacing="4" width="100%" height="100%" horizontalAlignment="ALIGN_CENTER" verticalAlignment="ALIGN_MIDDLE">
+						<g:Image url="" ui:field="image_Current01"/>
+						<g:Image url="" ui:field="image_Current02"/>
+						<g:Image url="" ui:field="image_Current03"/>
+						<g:Image url="" ui:field="image_Current04"/>
+					</g:HorizontalPanel>
+				</g:layer>
+			</g:LayoutPanel>
+		</b:Well>
+	</g:layer>
+	<g:layer left="303px" width="305px" top="82px" height="70px">
+		<b:TextArea height="40" visibleLines="4" width="295px" placeholder="営業/使用した物件" ui:field="txtAria_UseProperties"/>
+	</g:layer>
+</g:LayoutPanel>
+				</b:Well>
+			</b:WellForm>
+	</g:HTMLPanel>
+</ui:UiBinder>

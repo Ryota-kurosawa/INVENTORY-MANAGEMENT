@@ -1,0 +1,84 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:b="urn:import:com.github.gwtbootstrap.client.ui">
+	<ui:style>
+		.important {
+			font-weight: bold;
+		}
+	</ui:style>
+	<g:HTMLPanel ui:field="htmlpanel" width="100%" height="100%">
+
+		<g:LayoutPanel width="100%" height="100%" ui:field="layoutpanel">
+			<g:layer left="0px" width="500px" top="33px" height="1px">
+				<g:Image url="img/line_1260.png" width="500px"/>
+			</g:layer>
+			<g:layer left="24px" width="218px" top="42px" height="19px">
+				<b:Badge type="INFO" width="200px" horizontalAlignment="ALIGN_LEFT" ui:field="badge_lastname" height="15px" text="名字">名前</b:Badge>
+			</g:layer>
+			<g:layer left="23px" width="245px" top="62px" height="204px">
+				<b:TextBox placeholder="名字.." ui:field="txtbox_Lastname" width="204px"/>
+			</g:layer>
+			<g:layer left="258px" width="218px" top="42px" height="19px">
+				<b:Badge height="15px" horizontalAlignment="ALIGN_LEFT" text="名前" type="INFO" width="200px" ui:field="badge_firstname"/>
+			</g:layer>
+			<g:layer left="24px" width="218px" top="97px" height="19px">
+				<b:Badge height="15px" horizontalAlignment="ALIGN_LEFT" text="所属部門" type="INFO" width="200px" ui:field="badge_section"/>
+			</g:layer>
+			<g:layer left="256px" width="218px" top="97px" height="19px">
+				<b:Badge height="15px" horizontalAlignment="ALIGN_LEFT" text="権限" type="INFO" width="200px" ui:field="badge_authority"/>
+			</g:layer>
+			<g:layer left="24px" width="218px" top="155px" height="19px">
+				<b:Badge height="15px" horizontalAlignment="ALIGN_LEFT" text="ログインID" type="INFO" width="200px" ui:field="badge_loginid"/>
+			</g:layer>
+			<g:layer left="258px" width="218px" top="155px" height="19px">
+				<b:Badge height="15px" horizontalAlignment="ALIGN_LEFT" text="ログインPASSWORD" type="INFO" width="200px" ui:field="badge_password"/>
+			</g:layer>
+			<g:layer left="258px" width="218px" top="175px" height="40px">
+				<b:PasswordTextBox placeholder="半角英数6文字～12文字" width="204px" ui:field="txtbox_password"></b:PasswordTextBox>
+			</g:layer>
+			<g:layer left="24px" width="218px" top="213px" height="19px">
+				<b:Badge height="15px" horizontalAlignment="ALIGN_LEFT" text="Mail" type="INFO" width="200px" ui:field="badge_email"/>
+			</g:layer>
+			<g:layer left="258px" width="218px" top="213px" height="19px">
+				<b:Badge height="15px" horizontalAlignment="ALIGN_LEFT" text="有効/無効" type="INFO" width="100px" ui:field="badge_enabled"/>
+			</g:layer>
+			<g:layer left="258px" width="218px" top="62px" height="40px">
+				<b:TextBox placeholder="名前.." width="204px" ui:field="txtbox_Firstname"/>
+			</g:layer>
+			<g:layer left="0px" width="500px" top="293px" height="100px">
+				<g:Image url="img/line_1260.png" width="500px"/>
+			</g:layer>
+			<g:layer left="22px" width="220px" top="117px" height="32px">
+				<b:ListBox height="32px" ui:field="cmbbox_Section"/>
+			</g:layer>
+			<g:layer left="258px" width="220px" top="117px" height="32px">
+				<b:ListBox height="32px" width="220px" ui:field="cmbbox_Authority"/>
+			</g:layer>
+			<g:layer left="22px" width="220px" top="175px" height="40px">
+				<b:TextBox placeholder="半角数字" ui:field="txtbox_Loginid"/>
+			</g:layer>
+			<g:layer left="23px" width="235px" top="233px" height="40px">
+				<b:TextBox height="40" placeholder="メール" ui:field="txtbox_email"/>
+			</g:layer>
+			<g:layer left="258px" width="62px" top="238px" height="25px">
+				<b:CheckBox height="20px" width="60px" ui:field="chk_enabled"/>
+			</g:layer>
+			<g:layer left="20px" width="145px" top="14px" height="20px">
+				<g:Label text="ユーザー情報編集" ui:field="label_head"/>
+			</g:layer>
+			<g:layer left="156px" width="205px" top="299px" height="30px">
+			<b:Button width="170px" height="20px" text="更新" icon="USER_MD" type="PRIMARY" ui:field="btn_update"></b:Button>
+			</g:layer>
+			<g:layer left="354px" width="100px" top="306px" height="100px">
+				<g:Image url="img/loadingSpinMINI.gif" ui:field="image_minispin"/>
+			</g:layer>
+			<g:layer left="24px" width="141px" top="304px" height="25px">
+				<b:CheckBox height="20px" width="100px" text="ユーザーを削除" ui:field="checkbox_delete"/>
+			</g:layer>
+			<g:layer left="411px" width="88px" top="0px" height="27px">
+				<b:Button type="LINK" ui:field="btn_close" icon="REMOVE_SIGN" iconPosition="RIGHT" text="閉じる">閉じる</b:Button>
+			</g:layer>
+		</g:LayoutPanel>
+	</g:HTMLPanel>
+</ui:UiBinder>

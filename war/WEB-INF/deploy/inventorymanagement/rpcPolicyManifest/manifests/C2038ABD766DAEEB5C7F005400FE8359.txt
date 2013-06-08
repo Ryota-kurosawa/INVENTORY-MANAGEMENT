@@ -1,0 +1,2 @@
+serviceClass: com.krsw.InventoryManagement.client.HRD.ViewMode.AddHRDGeneralUserModeEntityService
+path: 71262FDB20F1610CC0114FA59310D819.gwt.rpc

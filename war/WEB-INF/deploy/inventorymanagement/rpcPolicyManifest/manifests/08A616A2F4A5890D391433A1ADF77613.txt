@@ -1,0 +1,2 @@
+serviceClass: com.krsw.InventoryManagement.client.HRD.Location.AddHRDLocationInfoEntityService
+path: DD7AF3C26F2D633E5CB6211AD1228131.gwt.rpc

@@ -1,0 +1,2 @@
+serviceClass: com.krsw.InventoryManagement.client.HRD.Accounts.AddHRDBasicUserInfoEntityService
+path: ABEA6EEBBF5F7F80568A5E2874ABBCEA.gwt.rpc

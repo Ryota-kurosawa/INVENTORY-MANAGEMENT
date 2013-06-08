@@ -1,0 +1,29 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:b="urn:import:com.github.gwtbootstrap.client.ui"
+	xmlns:p1="urn:import:com.google.gwt.user.cellview.client">
+	<ui:style>
+		.important {
+			font-weight: bold;
+		}
+	</ui:style>
+	<g:HTMLPanel ui:field="htmlpanel" width="100%" height="100%">
+	<b:ResponsiveNavbar ui:field="responsivenavBar" width="100%" height="3.3%" position="DEFAULT" inverse="true">
+		<b:Nav ui:field="nav">
+        <b:NavLink text="在庫幕設定" ui:field="navLink_stockfabric"></b:NavLink>
+        <b:NavLink text="拠点" ui:field="navlink_Dept"></b:NavLink>
+        <b:NavLink text="ユーザー" ui:field="navlink_User"></b:NavLink>
+        <b:NavLink text="アンケート" ui:field="navLink_surveyresult" icon="LIST_OL"></b:NavLink>
+    	</b:Nav>
+    	<b:Nav alignment="RIGHT" ui:field="navright">
+        <b:NavLink text="ユーザー" ui:field="navLink_username">Test</b:NavLink>
+    	</b:Nav>
+	</b:ResponsiveNavbar>
+	<g:LayoutPanel height="93%" width="100%" ui:field="layoutpanel">
+		<g:layer>
+			<b:DataGrid ui:field="datagrid" autoFooterRefreshDisabled="true" autoHeaderRefreshDisabled="true" bordered="true" condensed="true" focus="true" height="100%" keyboardSelectionPolicy="BOUND_TO_SELECTION" pageSize="100" striped="true" width="100%"/>
+		</g:layer>
+	</g:LayoutPanel>
+	</g:HTMLPanel>
+</ui:UiBinder>

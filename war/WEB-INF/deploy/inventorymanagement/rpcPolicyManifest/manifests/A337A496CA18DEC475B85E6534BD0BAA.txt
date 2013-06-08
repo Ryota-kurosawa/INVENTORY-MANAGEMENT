@@ -1,0 +1,2 @@
+serviceClass: com.krsw.InventoryManagement.client.HRD.Vote.Fabric.Totalization.FetchHRDFabricTotalizationService
+path: FEEB00E7C11404710BE9516F52477B5A.gwt.rpc

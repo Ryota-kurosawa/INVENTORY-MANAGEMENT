@@ -1,0 +1,2 @@
+serviceClass: com.krsw.InventoryManagement.client.BLOB.Stock.Fabric.FabricImageService
+path: D4A46AD1ABBEFBE67D307F704171C6C0.gwt.rpc

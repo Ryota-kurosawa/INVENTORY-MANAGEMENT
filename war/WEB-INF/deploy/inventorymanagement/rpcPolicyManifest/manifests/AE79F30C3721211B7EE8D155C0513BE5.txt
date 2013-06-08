@@ -1,0 +1,2 @@
+serviceClass: com.krsw.InventoryManagement.client.HRD.Vote.Fabric.VotingResults.AddHRDFabricCountingResultService
+path: F1B2DD46254FC1153833835341D3C199.gwt.rpc

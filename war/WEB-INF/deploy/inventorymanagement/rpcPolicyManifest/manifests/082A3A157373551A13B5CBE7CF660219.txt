@@ -1,0 +1,2 @@
+serviceClass: com.krsw.InventoryManagement.client.HRD.Stock.Fabric.AddHRDFabricInfoEntityService
+path: C071DF366958A83A5450418E4C1E0E07.gwt.rpc

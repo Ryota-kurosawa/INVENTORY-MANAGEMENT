@@ -1,0 +1,2 @@
+serviceClass: com.krsw.InventoryManagement.client.HRD.Logging.AddHRDLoggingUserInfoEntityService
+path: 7DBBF5D85D57F87A978358BC20C5B81F.gwt.rpc

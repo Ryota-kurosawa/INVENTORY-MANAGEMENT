@@ -1,0 +1,2 @@
+serviceClass: com.krsw.InventoryManagement.client.HRD.ViewMode.FetchHRDGeneralUserModeEntityService
+path: 310366749588893694773F341FE40177.gwt.rpc

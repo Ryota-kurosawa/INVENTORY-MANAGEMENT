@@ -1,0 +1,2 @@
+serviceClass: com.krsw.InventoryManagement.client.Mail.EmailService
+path: F8179A6844119B54B820FD5CA452A9B5.gwt.rpc

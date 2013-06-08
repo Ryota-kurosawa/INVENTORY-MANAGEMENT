@@ -1,0 +1,2 @@
+serviceClass: com.krsw.InventoryManagement.client.HRD.Accounts.FetchHRDBasicUserInfoEntityService
+path: CBF2D41DB8F2B4B1918C261AB2DACB88.gwt.rpc
