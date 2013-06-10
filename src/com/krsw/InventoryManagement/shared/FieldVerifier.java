@@ -75,47 +75,47 @@ public class FieldVerifier {
 	 */
 	public static void createSectionBox(ListBox cmbbox_Section){
 		cmbbox_Section.addItem("--- ここから部門を選択してください ---");
-		cmbbox_Section.addItem("602-舞台営業部/東京ドーム営業課");
-		cmbbox_Section.addItem("605-舞台営業部/営業三課");
-		cmbbox_Section.addItem("801-サイン・テキスタイル部(営業)");
-		cmbbox_Section.addItem("821-生産管理部");
-		cmbbox_Section.addItem("788-千葉スタジオ/出力");
-		cmbbox_Section.addItem("803-サイン・テキスタイル部");
-		cmbbox_Section.addItem("872-大阪支店/生産");
-		cmbbox_Section.addItem("603-舞台営業部/営業一課");
-		cmbbox_Section.addItem("604-舞台営業部/営業二課");
-		cmbbox_Section.addItem("611-メディア営業部");
-		cmbbox_Section.addItem("651-東京国際フォーラム営業部");
-		cmbbox_Section.addItem("632-スポーツ・コンベンション営業部/スポーツ一課");
-		cmbbox_Section.addItem("661-プロデュース部/プロデュース課");
-		cmbbox_Section.addItem("635-スポーツ・コンベンション営業部/多摩営業所");
-		cmbbox_Section.addItem("802-サイン・テキスタイル部(生産)");
-		cmbbox_Section.addItem("811-レンタル事業部");
-		cmbbox_Section.addItem("633-スポーツ・コンベンション営業部/スポーツ二課");
-		cmbbox_Section.addItem("634-スポーツ・コンベンション営業部/コンベンション一課");
-		cmbbox_Section.addItem("642-EVスペース開発部/営業第一課");
-		cmbbox_Section.addItem("643-EVスペース開発部/営業第二課");
-		cmbbox_Section.addItem("644-EVスペース開発部/海外事業課");
-		cmbbox_Section.addItem("645-EVスペース開発部/美術制作課");
-		cmbbox_Section.addItem("646-EVスペース開発部/デザイン課");
-		cmbbox_Section.addItem("751-技術部/安全指導課");
-		cmbbox_Section.addItem("871-大阪支店/制作部");
-		cmbbox_Section.addItem("782-千葉スタジオ/機構");
-		cmbbox_Section.addItem("783-千葉営業/オクトホール");
-		cmbbox_Section.addItem("784-千葉スタジオ/物流");
-		cmbbox_Section.addItem("785-千葉スタジオ/資材・SSR");
-		cmbbox_Section.addItem("786-千葉スタジオ/美工");
-		cmbbox_Section.addItem("787-千葉スタジオ/製作");
-		cmbbox_Section.addItem("781-千葉スタジオ/管理課");
-		cmbbox_Section.addItem("790-かずさアカデミーパーク");
-		cmbbox_Section.addItem("752-技術部/技術課");
-		cmbbox_Section.addItem("761-デザイン部");
-		cmbbox_Section.addItem("883-東北復興支援プロジェクト");
-		cmbbox_Section.addItem("774-美術制作部/美術制作課");
-		cmbbox_Section.addItem("773-美術制作部/リギング");
-		cmbbox_Section.addItem("621-ビジュアル部");
-		cmbbox_Section.addItem("93-横浜シミズ/営業");
-		cmbbox_Section.addItem("94-西日本シミズ");
+		cmbbox_Section.addItem("602-");
+		cmbbox_Section.addItem("605-");
+		cmbbox_Section.addItem("801-");
+		cmbbox_Section.addItem("821-");
+		cmbbox_Section.addItem("788-");
+		cmbbox_Section.addItem("803-");
+		cmbbox_Section.addItem("872-");
+		cmbbox_Section.addItem("603-");
+		cmbbox_Section.addItem("604-");
+		cmbbox_Section.addItem("611-");
+		cmbbox_Section.addItem("651-");
+		cmbbox_Section.addItem("632-");
+		cmbbox_Section.addItem("661-");
+		cmbbox_Section.addItem("635-");
+		cmbbox_Section.addItem("802-");
+		cmbbox_Section.addItem("811-");
+		cmbbox_Section.addItem("633-");
+		cmbbox_Section.addItem("634-");
+		cmbbox_Section.addItem("642-");
+		cmbbox_Section.addItem("643-");
+		cmbbox_Section.addItem("644-");
+		cmbbox_Section.addItem("645-");
+		cmbbox_Section.addItem("646-");
+		cmbbox_Section.addItem("751-");
+		cmbbox_Section.addItem("871-");
+		cmbbox_Section.addItem("782-");
+		cmbbox_Section.addItem("783-");
+		cmbbox_Section.addItem("784-");
+		cmbbox_Section.addItem("785-");
+		cmbbox_Section.addItem("786-");
+		cmbbox_Section.addItem("787-");
+		cmbbox_Section.addItem("781-");
+		cmbbox_Section.addItem("790-");
+		cmbbox_Section.addItem("752-");
+		cmbbox_Section.addItem("761-");
+		cmbbox_Section.addItem("883-");
+		cmbbox_Section.addItem("774-");
+		cmbbox_Section.addItem("773-");
+		cmbbox_Section.addItem("621-");
+		cmbbox_Section.addItem("93-");
+		cmbbox_Section.addItem("94-");
 		cmbbox_Section.addItem("999-その他");
 	}
 	/**
@@ -132,11 +132,11 @@ public class FieldVerifier {
 	 * @param cmbbox_Section
 	 */
 	public static void createStorageLocationBox(ListBox cmbbox_StorageLocation){
-		cmbbox_StorageLocation.addItem("千葉スタジオ");
-		cmbbox_StorageLocation.addItem("下落合スタジオ");
-		cmbbox_StorageLocation.addItem("日通倉庫");
-		cmbbox_StorageLocation.addItem("木更津倉庫");
-		cmbbox_StorageLocation.addItem("金田倉庫");
+		cmbbox_StorageLocation.addItem("");
+		cmbbox_StorageLocation.addItem("");
+		cmbbox_StorageLocation.addItem("");
+		cmbbox_StorageLocation.addItem("");
+		cmbbox_StorageLocation.addItem("");
 	}
 
 	//アンケートモードの投票完了お知らせ先メールアドレス
