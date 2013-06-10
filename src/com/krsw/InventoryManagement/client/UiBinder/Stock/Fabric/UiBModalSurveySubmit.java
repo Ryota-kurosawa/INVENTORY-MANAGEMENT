@@ -459,12 +459,12 @@ public class UiBModalSurveySubmit extends Composite implements HasText {
 			}
 			public void onSuccess(Object result) {
 				final EmailServiceAsync emailServiceAsync = GWT.create(EmailService.class);
-				emailServiceAsync.sendMail("hinkan001@gmail.com", sendAddress02,
+				emailServiceAsync.sendMail("******.com", sendAddress02,
 						"【千葉スタジオ有り物幕 投票完了お知らせメール】", COMMAND.BCC,
-						"smz-inventorymanagement.appspot.com",
+						"*********************.com",
 						getCmb_searchBusho() + "　" + txtbox_Name.getText() + "さんが投票しました." + "\n" +
 						"管理者アカウントで下記URLにログインして確認してください。\n" +
-						"http://smz-inventorymanagement.appspot.com",
+						"http://*********************.com",
 						new AsyncCallback() {
 							public void onFailure(Throwable caught) {
 								Window.alert("emailServiceAsync - 01" + caught.getMessage());
@@ -474,13 +474,13 @@ public class UiBModalSurveySubmit extends Composite implements HasText {
 //								Window.Location.reload();
 							}
 				});
-				emailServiceAsync.sendMail("hinkan001@gmail.com", sendAddress01,
+				emailServiceAsync.sendMail("******.com", sendAddress01,
 						"【千葉スタジオ有り物幕 投票完了お知らせメール】", COMMAND.BCC,
-						"smz-inventorymanagement.appspot.com",
+						"*********************.com",
 						getCmb_searchBusho() + "　" + txtbox_Name.getText() + "さんが投票しました." + "\n" +
-						"ID:006201/PW:smzS6201 で下記URLにログインして、\n" +
+						"ID:******/PW:****** で下記URLにログインして、\n" +
 						"管理者アカウントで下記URLにログインして確認してください。\n" +
-						"http://smz-inventorymanagement.appspot.com",
+						"http://*********************.com",
 						new AsyncCallback() {
 							public void onFailure(Throwable caught) {
 								Window.alert("emailServiceAsync - 02" + caught.getMessage());
