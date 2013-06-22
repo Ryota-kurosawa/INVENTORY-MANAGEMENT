@@ -383,16 +383,16 @@ public class UiBModalSurveySubmit extends Composite implements HasText {
 	@UiHandler("btn_Send")
 	void onBtn_sendClick(ClickEvent event) {
 		if(cmb_searchBusho.getSelectedIndex() == 0){
-			Window.alert("リストから部門を選択してください。");
+			Window.alert("リストから**を選択してください。");
 			return;
 		}
 		if(txtbox_Name.getText() == ""){
-			Window.alert("氏名を入力してください.");
+			Window.alert("**を入力してください.");
 			return;
 		}
 		img_Spin.setVisible(true);
 		btn_Send.setVisible(false);
-		//幕番号で検索
+		//*番号で検索
 		AsyncCallback<List<SerializeHRDFabricInfoEntity>>fabriccallback = new AsyncCallback<List<SerializeHRDFabricInfoEntity>>() {
 			public void onFailure(Throwable caught) {
 				Window.alert(this.getClass() + "FetchFabricInfoAsync" + caught.getLocalizedMessage());
@@ -460,9 +460,9 @@ public class UiBModalSurveySubmit extends Composite implements HasText {
 			public void onSuccess(Object result) {
 				final EmailServiceAsync emailServiceAsync = GWT.create(EmailService.class);
 				emailServiceAsync.sendMail("******.com", sendAddress02,
-						"【千葉スタジオ有り物幕 投票完了お知らせメール】", COMMAND.BCC,
+						"【********************* **完了お知らせメール】", COMMAND.BCC,
 						"*********************.com",
-						getCmb_searchBusho() + "　" + txtbox_Name.getText() + "さんが投票しました." + "\n" +
+						getCmb_searchBusho() + "　" + txtbox_Name.getText() + "さんが**しました." + "\n" +
 						"管理者アカウントで下記URLにログインして確認してください。\n" +
 						"http://*********************.com",
 						new AsyncCallback() {
@@ -475,7 +475,7 @@ public class UiBModalSurveySubmit extends Composite implements HasText {
 							}
 				});
 				emailServiceAsync.sendMail("******.com", sendAddress01,
-						"【千葉スタジオ有り物幕 投票完了お知らせメール】", COMMAND.BCC,
+						"【********************* **完了お知らせメール】", COMMAND.BCC,
 						"*********************.com",
 						getCmb_searchBusho() + "　" + txtbox_Name.getText() + "さんが投票しました." + "\n" +
 						"ID:******/PW:****** で下記URLにログインして、\n" +
